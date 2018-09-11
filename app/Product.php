@@ -32,25 +32,21 @@ class Product extends Model
     public function scopeDateMax($query, $request)
     {
         if (!is_null($request->get('date_max'))) {
-            return $query->where('created_at', '<=', $request->get('date_max'));
+            return $query->where('created_at', '<=', $request->get('date_max').'23:59:59');
         }
     }
 
     public function scopeDateSort($query, $request)
     {
-        if ($request->get('date_sort') == 'asc') {
-            return $query->orderby('created_at', 'asc');
-        } else {
-            return $query->orderby('created_at', 'desc');
+        if (!is_null($request->get('date_sort'))) {
+            return $query->orderby('created_at', $request->get('date_sort'));
         }
     }
 
     public function scopeNameSort($query, $request)
     {
-        if ($request->get('name_sort') == 'desc') {
-            return $query->orderby('name', 'desc');
-        } else {
-            return $query->orderby('name', 'asc');
+        if (!is_null($request->get('name_sort'))) {
+            return $query->orderby('name', $request->get('name_sort'));
         }
     }
 }
