@@ -18,7 +18,7 @@ class Product extends Model
     public function scopePriceMax($query, $request)
     {
         if (!is_null($request->get('price_max'))) {
-            return $query->where('price', '>=', $request->get('price_max'));
+            return $query->where('price', '<=', $request->get('price_max'));
         }
     }
 
@@ -32,7 +32,7 @@ class Product extends Model
     public function scopeDateMax($query, $request)
     {
         if (!is_null($request->get('date_max'))) {
-            return $query->where('created_at', '>=', $request->get('date_max'));
+            return $query->where('created_at', '<=', $request->get('date_max'));
         }
     }
 
@@ -47,7 +47,7 @@ class Product extends Model
 
     public function scopeNameSort($query, $request)
     {
-        if ($request->get('date_sort') == 'desc') {
+        if ($request->get('name_sort') == 'desc') {
             return $query->orderby('name', 'desc');
         } else {
             return $query->orderby('name', 'asc');
