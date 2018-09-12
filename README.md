@@ -28,8 +28,8 @@ name_sort - сортировка по названию (asc, desc).
 Example URL: http://1331836.qievhous.web.hosting-test.net/api/product?quantity=7&price_min=20000&price_max=180000&date_min=2018-09-11&date_max=2018-09-17&date_sort=desc&name_sort=asc
 
 _________________________________
-Так же доступны:
-GET http://1331836.qievhous.web.hosting-test.net/api/product/2 - получить запись с id 2;
-PUT http://1331836.qievhous.web.hosting-test.net/api/product/2 - обновить запись с id 2;
-DELETE http://1331836.qievhous.web.hosting-test.net/api/product/2 - удалить запись с id 2;
-POST http://1331836.qievhous.web.hosting-test.net/api/product - создать новую запись;
+### Так же доступны:
+#### GET http://1331836.qievhous.web.hosting-test.net/api/product/2 - получить запись с id 2;
+#### PUT http://1331836.qievhous.web.hosting-test.net/api/product/2 - обновить запись с id 2;
+#### DELETE http://1331836.qievhous.web.hosting-test.net/api/product/2 - удалить запись с id 2;
+#### POST http://1331836.qievhous.web.hosting-test.net/api/product - создать новую запись;
