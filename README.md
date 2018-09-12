@@ -3,14 +3,14 @@ http://1331836.qievhous.web.hosting-test.net
 
 ## API URL's
 
-### GET http://1331836.qievhous.web.hosting-test.net/api/login
+### POST http://1331836.qievhous.web.hosting-test.net/api/login
 #### Accept:application/json
 
 #### email:john.doe@domain.com
 #### password:qwerty
 
 
-### POST http://1331836.qievhous.web.hosting-test.net/api/product
+### GET http://1331836.qievhous.web.hosting-test.net/api/product
 #### Accept:application/json
 
 #### Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMzMxODM2LnFpZXZob3VzLndlYi5ob3N0aW5nLXRlc3QubmV0XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTM2NzA4OTAwLCJleHAiOjE1MzY3MTI1MDAsIm5iZiI6MTUzNjcwODkwMCwianRpIjoiNW1pbVVlZzZMZ2d6SXk0NyIsInN1YiI6MSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.FIgNLZSlf1kMaRgjQqqJPN5o28G9MOhL2nGa9V_WG88
